@@ -1,0 +1,41 @@
+.header__carousel {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  will-change: transform;
+  animation: carousel 20s linear infinite;
+
+  h2 {
+    font-family: $headers;
+    font-size: $_50px;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 1;
+    color: $grey;
+
+    margin-top: 0;
+
+    @include breakpoint-width-height(667px, 375px, 667px) {
+      font-size: $_32px;
+    }
+
+    @include breakpoint-up(tablet) {
+      font-size: $_70px;
+    }
+
+    @include breakpoint-up(iPadPro) {
+      font-size: $_70px;
+    }
+
+    @include breakpoint-up(desktop) {
+      margin-bottom: 10.625rem;
+      font-size: $_100px;
+    }
+
+    @include breakpoint-up(large) {
+      font-size: $_120px;
+    }
+  }
+}

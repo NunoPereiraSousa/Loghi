@@ -1,0 +1,24 @@
+.carousel {
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+
+  .slide-track {
+    animation: carousel-phone 20s linear infinite;
+    width: calc(400px * 6);
+  }
+
+  .slide {
+    width: 400px;
+
+    h3 {
+      margin: 0;
+      font-weight: 400;
+      white-space: nowrap;
+
+      &.landing {
+        font-size: $_16px;
+      }
+    }
+  }
+}

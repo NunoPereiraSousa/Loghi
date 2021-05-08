@@ -1,0 +1,188 @@
+.mobile_menu {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  padding: 2rem 2rem 6rem;
+  visibility: hidden;
+  pointer-events: none;
+
+  font-family: $body;
+
+  transition: all 0.8s;
+
+  &__bg {
+    background-color: $black;
+    color: $white;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    transition: 0.8s;
+
+    &.open {
+      width: 100%;
+    }
+  }
+
+  &.open {
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  &__subtitles {
+    color: $yellow;
+    font-size: $_18px;
+    font-weight: 400;
+    margin: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.8s;
+
+    &.open {
+      visibility: visible;
+      pointer-events: auto;
+      opacity: 1;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    &__pos {
+      position: absolute;
+      width: 100%;
+      top: auto;
+      transform: none;
+      height: 100%;
+      padding: 2rem 2rem 16vh;
+
+      @include breakpoint-down(phone) {
+        padding: 2rem 2rem 4vh;
+      }
+
+      @include breakpoint-up(iPadPro) {
+        padding: 2rem 10vw 16vh;
+      }
+
+      ul {
+        padding: 0;
+        margin: 0 0 1.6rem;
+        visibility: hidden;
+        opacity: 0;
+
+        transition: all 0.8s;
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        &.open {
+          visibility: visible;
+          opacity: 1;
+        }
+
+        li {
+          list-style-type: none;
+
+          a {
+            color: $white;
+          }
+        }
+
+        &.mobile_menu__links {
+          margin-bottom: 5vh;
+
+          li {
+            line-height: 1.5;
+
+            @include breakpoint-up(tablet) {
+              line-height: 1.5;
+            }
+
+            a {
+              font-size: $_34px;
+              font-weight: 400;
+
+              @include breakpoint-up(tablet) {
+                font-size: $_60px;
+              }
+            }
+          }
+        }
+
+        &.mobile_menu__services {
+          margin-bottom: 3vh;
+
+          li {
+            @include breakpoint-up(tablet) {
+              line-height: 1.7;
+            }
+          }
+          a {
+            font-size: $_15px;
+            color: $white;
+
+            @include breakpoint-up(tablet) {
+              font-size: $_22px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__socials {
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.8s;
+
+    &.open {
+      visibility: visible;
+      pointer-events: auto;
+      opacity: 1;
+    }
+
+    a {
+      color: $white;
+
+      &:nth-child(2) {
+        margin: 1rem 0;
+      }
+    }
+  }
+
+  &__email {
+    position: absolute;
+    transform: rotate(90deg) translateY(-200%);
+    right: 2rem;
+    top: 80%;
+    transform-origin: center bottom;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.8s;
+
+    &.open {
+      visibility: visible;
+      pointer-events: auto;
+      opacity: 1;
+    }
+
+    a {
+      color: $white;
+      font-size: $_14px;
+      text-decoration: underline $white;
+    }
+  }
+}

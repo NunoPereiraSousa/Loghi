@@ -1,0 +1,174 @@
+.header {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  z-index: 2;
+
+  padding: 1.5rem 1.25rem;
+
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.8s;
+
+  &.remove {
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  @include breakpoint-up(tablet) {
+    padding: 2rem 2rem;
+  }
+
+  @include breakpoint-up(iPadPro) {
+    padding: 4vh 5.5vw;
+  }
+
+  @include breakpoint-up(desktop) {
+    padding: 4rem 5.5vw 0;
+  }
+
+  &__logo {
+    font-family: $body;
+    font-size: $_15px;
+    color: $white;
+    font-weight: 400;
+    letter-spacing: normal;
+    text-transform: uppercase;
+
+    @include breakpoint-up(tablet) {
+      font-size: $_26px;
+    }
+
+    @include breakpoint-up(desktop) {
+      font-size: $_18px;
+    }
+
+    @include breakpoint-up(large) {
+      font-size: $_22px;
+    }
+  }
+
+  &__hamburger {
+    position: relative;
+
+    width: 2.25rem;
+    height: 0.625rem;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 1.625rem;
+      background-color: $white;
+      transition: all 0.8s;
+    }
+
+    &::before {
+      top: 0%;
+      transform-origin: -12px 0;
+    }
+
+    &::after {
+      bottom: 1%;
+      right: 0%;
+
+      transform-origin: -14px 0;
+    }
+  }
+
+  &__desktop_menu {
+    a {
+      color: $white;
+      font-size: $_22px;
+      font-family: $headers;
+
+      &:first-child {
+        margin-right: 2rem;
+      }
+
+      &:hover {
+        color: $red;
+      }
+
+      @include breakpoint-up(desktop) {
+        font-size: $_18px;
+      }
+
+      @include breakpoint-up(large) {
+        font-size: $_22px;
+      }
+    }
+  }
+}
+
+.header_open {
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  z-index: 1;
+
+  padding: 1.5rem 1.25rem;
+
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.8s;
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  #toggleTheme {
+    margin: 0;
+  }
+
+  &__logo {
+    font-family: $headers;
+    color: $white;
+    font-size: $_15px;
+    font-weight: 400;
+    letter-spacing: normal;
+    text-transform: uppercase;
+
+    @include breakpoint-up(tablet) {
+      font-size: $_26px;
+    }
+  }
+
+  &__cross {
+    position: relative;
+
+    width: 2.25rem;
+    height: 1.875rem;
+
+    &__lines {
+      content: "";
+      position: absolute;
+      left: 50%;
+      height: 2px;
+      width: 1rem;
+      background-color: $white;
+      transition: all 0.8s;
+
+      &:nth-child(1) {
+        top: 0%;
+        transform: rotate(45deg) translateX(-25%);
+        transform-origin: -1rem 5px;
+      }
+
+      &:nth-child(2) {
+        bottom: 1%;
+        transform: rotate(-45deg) translateX(-25%);
+        transform-origin: -0.8rem -1.5px;
+      }
+    }
+  }
+}

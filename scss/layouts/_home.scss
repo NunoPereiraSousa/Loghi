@@ -1,0 +1,62 @@
+.presentation {
+  position: relative;
+  height: 100vh;
+
+  padding: 120px 0;
+
+  &__title {
+    padding: 0 2rem;
+    font-size: $_50px;
+    line-height: 1.1;
+    color: $white;
+    font-weight: 400;
+
+    div {
+      &:nth-child(3) {
+        color: $yellow;
+
+        transform: rotate(-4deg);
+      }
+    }
+  }
+
+  &__banner {
+    margin: 10vh 0;
+    background-color: $white;
+    padding: 0.6rem 0;
+    transform: rotate(4deg);
+  }
+
+  &__svg {
+    padding: 0 2rem;
+
+    svg#circle {
+      animation: spin 15s infinite linear;
+    }
+
+    svg#arrow {
+      transform: translate(-250%, -100%);
+    }
+  }
+
+  &__email {
+    position: absolute;
+    transform: rotate(90deg) translateY(-200%);
+    right: calc(2rem - 9px);
+    top: 80%;
+    transform-origin: center bottom;
+    transition: all 0.8s;
+
+    &.open {
+      visibility: visible;
+      pointer-events: auto;
+      opacity: 1;
+    }
+
+    a {
+      color: $white;
+      font-size: $_14px;
+      text-decoration: underline $white;
+    }
+  }
+}
