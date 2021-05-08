@@ -6,18 +6,36 @@
   .slide-track {
     animation: carousel-phone 20s linear infinite;
     width: calc(400px * 6);
+
+    &.track_services {
+      width: calc(240px * 6);
+      animation: carousel-phone-services 2s linear infinite;
+    }
   }
 
   .slide {
     width: 400px;
 
+    &.slide_services {
+      width: 240px;
+    }
+
     h3 {
       margin: 0;
       font-weight: 400;
-      white-space: nowrap;
 
       &.landing {
         font-size: $_16px;
+        white-space: nowrap;
+      }
+
+      &.services {
+        color: $white;
+        font-size: $_34px;
+
+        // svg {
+        //   margin-left: 2rem;
+        // }
       }
     }
   }

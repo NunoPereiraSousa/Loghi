@@ -60,3 +60,22 @@
     }
   }
 }
+
+.services,
+.about,
+.projects_showcase {
+  padding: 0 2rem 4rem;
+}
+
+.about {
+  &__paragraph {
+    color: $grey;
+    font-size: $_18px;
+
+    margin: 0;
+
+    &:last-child {
+      margin-top: 40px;
+    }
+  }
+}

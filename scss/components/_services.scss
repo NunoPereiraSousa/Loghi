@@ -1,0 +1,49 @@
+.services__grid__card {
+  padding: 30px 2rem;
+
+  &:first-child {
+    border: 1px solid #464646;
+  }
+
+  &:not(&:first-child) {
+    border-bottom: 1px solid #464646;
+    border-left: 1px solid #464646;
+    border-right: 1px solid #464646;
+  }
+
+  &__red {
+    background-color: $red;
+    padding: 30px 2rem;
+
+    position: relative;
+
+    h2 {
+      margin-top: 0;
+      line-height: 1.1;
+      color: $yellow;
+    }
+
+    p {
+      color: $white;
+    }
+
+    svg {
+      position: absolute;
+      bottom: 10%;
+      right: 10%;
+      height: 20px;
+    }
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: $_20px;
+    margin-top: 0;
+    color: $yellow;
+  }
+
+  p {
+    margin-bottom: 0;
+    color: $grey;
+  }
+}

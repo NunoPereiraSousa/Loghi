@@ -40,3 +40,12 @@
     transform: translateX(calc(-400px * 3));
   }
 }
+
+@keyframes carousel-phone-services {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-240px * 3));
+  }
+}
