@@ -79,3 +79,21 @@
     }
   }
 }
+
+.carousels {
+  &__banner,
+  &__banner2 {
+    background-color: $white;
+    padding: 0.6rem 0;
+    margin: 10vh 0;
+    transform: rotate(4deg);
+  }
+
+  &__banner {
+    margin-bottom: 0;
+  }
+
+  &__banner2 {
+    margin-top: 5vh;
+  }
+}

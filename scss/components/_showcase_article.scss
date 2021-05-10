@@ -1,18 +1,18 @@
 .showcase__grid__article {
-  border-bottom: 1px solid rgba($color: $grey, $alpha: 0.4);
+  border-bottom: 1px solid rgba($color: $yellow, $alpha: 0.8);
 
   &:first-child {
-    border-top: 1px solid rgba($color: $grey, $alpha: 0.4);
+    border-top: 1px solid rgba($color: $yellow, $alpha: 0.8);
 
     @include breakpoint-up(desktop) {
-      border-top: 1px solid rgba($color: $grey, $alpha: 0.2);
+      border-top: 1px solid rgba($color: $yellow, $alpha: 0.4);
     }
   }
 
   transition: all 0.4s;
 
   @include breakpoint-up(desktop) {
-    border-bottom: 1px solid rgba($color: $grey, $alpha: 0.2);
+    border-bottom: 1px solid rgba($color: $yellow, $alpha: 0.4);
     padding-top: 4rem;
 
     opacity: 0.5;
@@ -74,7 +74,7 @@
     color: $grey;
 
     font-weight: 400;
-    font-size: $_22px;
+    font-size: $_18px;
     line-height: 1.4;
 
     @include breakpoint-up(tablet) {

@@ -1,0 +1,19 @@
+.footer {
+  width: 100%;
+
+  padding: 1rem 2rem;
+  a {
+    color: $white;
+  }
+
+  &_socials {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+  }
+
+  &_email {
+    a {
+      text-decoration: 1px underline $white;
+    }
+  }
+}

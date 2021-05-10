@@ -49,3 +49,12 @@
     transform: translateX(calc(-240px * 3));
   }
 }
+
+@keyframes carousel-phone-carousels {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-350px * 3));
+  }
+}
