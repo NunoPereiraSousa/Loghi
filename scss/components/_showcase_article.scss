@@ -9,14 +9,14 @@
     }
   }
 
-  transition: all 0.4s;
-
   @include breakpoint-up(desktop) {
     border-bottom: 1px solid rgba($color: $yellow, $alpha: 0.4);
     padding-top: 4rem;
 
     opacity: 0.5;
   }
+
+  transition: all 0.4s;
 
   &:hover {
     opacity: 1;

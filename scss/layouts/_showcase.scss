@@ -1,0 +1,65 @@
+.showcase_landing {
+  position: relative;
+
+  padding: 120px 2rem;
+
+  &__title {
+    font-size: $_50px;
+    line-height: 1.1;
+    color: $white;
+    font-weight: 400;
+
+    div {
+      &:nth-child(2) {
+        color: $yellow;
+
+        transform: rotate(-4deg);
+      }
+    }
+  }
+
+  p {
+    color: $grey;
+
+    font-size: $_18px;
+  }
+
+  &__grid {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    row-gap: 2.5rem;
+
+    justify-items: center;
+    align-items: center;
+
+    @include breakpoint-up(tablet) {
+      row-gap: 3.5rem;
+    }
+
+    @include breakpoint-up(desktop) {
+      grid-template-columns: repeat(4, 1fr);
+      row-gap: 5rem;
+    }
+
+    svg {
+      height: 50px;
+
+      filter: grayscale(100%);
+      transition: all 0.4s;
+
+      @include breakpoint-up(tablet) {
+        height: 80px;
+      }
+
+      @include breakpoint-up(desktop) {
+        height: 90px;
+      }
+
+      &:hover {
+        filter: grayscale(0%);
+      }
+    }
+  }
+}
