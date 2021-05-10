@@ -1125,4 +1125,91 @@ main {
   -webkit-text-decoration: 1px underline #ffffff;
           text-decoration: 1px underline #ffffff;
 }
+
+.about_landing {
+  position: relative;
+  height: 100vh;
+  padding: 120px 2rem;
+}
+
+.about_landing__title {
+  font-size: 3.125rem;
+  line-height: 1.1;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.about_landing__title div:nth-child(3) {
+  color: #d1ed5d;
+  -webkit-transform: rotate(-4deg);
+          transform: rotate(-4deg);
+}
+
+.about_landing_contacts {
+  margin-top: 16vh;
+}
+
+.about_landing_contacts h3 {
+  color: #d1ed5d;
+  font-family: "Raleway";
+  font-size: 1.5rem;
+  margin: 0 0 1rem;
+}
+
+.about_landing_contacts h5 {
+  color: #656565;
+  -webkit-text-decoration: 1px underline #656565;
+          text-decoration: 1px underline #656565;
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+}
+
+.about_landing_contacts p {
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 0.4rem;
+}
+
+.about_landing_contacts p:last-child {
+  -webkit-text-decoration: 2px underline #ffffff;
+          text-decoration: 2px underline #ffffff;
+}
+
+.about_landing_contacts a {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.about_landing svg {
+  position: absolute;
+  bottom: 4%;
+  right: 2rem;
+  -webkit-animation: spin 8s linear infinite;
+          animation: spin 8s linear infinite;
+}
+
+.about_us {
+  padding: 4rem 2rem;
+}
+
+.about_us p {
+  color: #c9c9c9;
+  font-size: 1.125rem;
+}
+
+.about_us p:nth-child(3) {
+  margin-top: 5vh;
+}
+
+.about_us_team {
+  margin: 7vh 0 4vh;
+  color: #ff4d26;
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 1.875rem;
+}
 /*# sourceMappingURL=style.css.map */

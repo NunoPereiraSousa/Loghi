@@ -1,0 +1,90 @@
+.about_landing {
+  position: relative;
+  height: 100vh;
+
+  padding: 120px 2rem;
+
+  &__title {
+    font-size: $_50px;
+    line-height: 1.1;
+    color: $white;
+    font-weight: 400;
+
+    div {
+      &:nth-child(3) {
+        color: $yellow;
+
+        transform: rotate(-4deg);
+      }
+    }
+  }
+
+  &_contacts {
+    margin-top: 16vh;
+
+    h3 {
+      color: $yellow;
+      font-family: $headers;
+      font-size: $_24px;
+
+      margin: 0 0 1rem;
+    }
+
+    h5 {
+      color: $darkGrey;
+      text-decoration: 1px underline $darkGrey;
+      font-size: $_18px;
+      font-weight: 400;
+      margin-top: 0;
+      margin-bottom: 0.4rem;
+    }
+
+    p {
+      color: $white;
+      font-size: $_18px;
+      font-weight: 400;
+      margin: 0;
+      margin-bottom: 0.4rem;
+
+      &:last-child {
+        text-decoration: 2px underline $white;
+      }
+    }
+
+    a {
+      font-size: $_16px;
+      color: $white;
+    }
+  }
+
+  svg {
+    position: absolute;
+    bottom: 4%;
+    right: 2rem;
+
+    animation: spin 8s linear infinite;
+  }
+}
+
+.about_us {
+  padding: 4rem 2rem;
+
+  p {
+    color: $grey;
+
+    font-size: $_18px;
+
+    &:nth-child(3) {
+      margin-top: 5vh;
+    }
+  }
+
+  &_team {
+    margin: 7vh 0 4vh;
+
+    color: $red;
+    font-family: $headers;
+    font-weight: 600;
+    font-size: $_30px;
+  }
+}
