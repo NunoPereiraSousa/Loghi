@@ -2,7 +2,11 @@
   position: relative;
   height: 100vh;
 
-  padding: 120px 0;
+  padding: 7.5rem 0;
+
+  @include breakpoint-width-height(667px, 375px, 667px) {
+    padding: 6.25rem 0;
+  }
 
   &__title {
     padding: 0 2rem;
@@ -10,6 +14,10 @@
     line-height: 1.1;
     color: $white;
     font-weight: 400;
+
+    @include breakpoint-width-height(667px, 375px, 667px) {
+      font-size: $_46px;
+    }
 
     div {
       &:nth-child(3) {
@@ -32,10 +40,19 @@
 
     svg#circle {
       animation: spin 15s infinite linear;
+
+      @include breakpoint-width-height(667px, 375px, 667px) {
+        height: 150px;
+      }
     }
 
     svg#arrow {
       transform: translate(-250%, -100%);
+
+      @include breakpoint-width-height(667px, 375px, 667px) {
+        height: 40px;
+        transform: translate(-250%, -130%);
+      }
     }
   }
 
@@ -68,6 +85,10 @@
 }
 
 .about {
+  @include breakpoint-width-height(667px, 375px, 667px) {
+    padding-top: 2rem;
+  }
+
   &__paragraph {
     color: $grey;
     font-size: $_18px;

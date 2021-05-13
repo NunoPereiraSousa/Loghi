@@ -2,7 +2,7 @@
   border-bottom: 1px solid rgba($color: $yellow, $alpha: 0.8);
 
   &:first-child {
-    border-top: 1px solid rgba($color: $yellow, $alpha: 0.8);
+    border-top: 1px solid rgba($color: $yellow, $alpha: 0.4);
 
     @include breakpoint-up(desktop) {
       border-top: 1px solid rgba($color: $yellow, $alpha: 0.4);

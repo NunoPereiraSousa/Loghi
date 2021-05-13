@@ -2,13 +2,21 @@
   position: relative;
   height: 100vh;
 
-  padding: 120px 2rem;
+  padding: 7.5rem 2rem;
+
+  @include breakpoint-width-height(667px, 375px, 667px) {
+    padding: 6.25rem 2rem;
+  }
 
   &__title {
     font-size: $_50px;
     line-height: 1.1;
     color: $white;
     font-weight: 400;
+
+    @include breakpoint-width-height(667px, 375px, 667px) {
+      margin-top: 0;
+    }
 
     div {
       &:nth-child(3) {
@@ -37,6 +45,10 @@
       font-weight: 400;
       margin-top: 0;
       margin-bottom: 0.4rem;
+
+      @include breakpoint-width-height(667px, 375px, 667px) {
+        font-size: $_17px;
+      }
     }
 
     p {
@@ -45,6 +57,10 @@
       font-weight: 400;
       margin: 0;
       margin-bottom: 0.4rem;
+
+      @include breakpoint-width-height(667px, 375px, 667px) {
+        font-size: $_17px;
+      }
 
       &:last-child {
         text-decoration: 2px underline $white;

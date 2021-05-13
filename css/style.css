@@ -550,6 +550,13 @@ main {
   transition: all 0.8s;
 }
 
+@media (max-width: 667px) and (min-width: 375px) and (max-height: 667px) {
+  .mobile_menu__subtitles {
+    font-size: 1.0625rem;
+    margin-bottom: 0.1rem;
+  }
+}
+
 .mobile_menu__subtitles.open {
   visibility: visible;
   pointer-events: auto;
@@ -572,6 +579,12 @@ main {
           transform: none;
   height: 100%;
   padding: 2rem 2rem 16vh;
+}
+
+@media (max-width: 667px) and (min-width: 375px) and (max-height: 667px) {
+  .mobile_menu__content__pos {
+    margin-top: 6vh;
+  }
 }
 
 @media (max-width: 23.375em) {
@@ -670,6 +683,12 @@ main {
   transition: all 0.8s;
 }
 
+@media (max-width: 667px) and (min-width: 375px) and (max-height: 667px) {
+  .mobile_menu__socials {
+    top: 34%;
+  }
+}
+
 .mobile_menu__socials.open {
   visibility: visible;
   pointer-events: auto;
@@ -696,6 +715,12 @@ main {
   opacity: 0;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
+}
+
+@media (max-width: 667px) and (min-width: 375px) and (max-height: 667px) {
+  .mobile_menu__email {
+    top: 70%;
+  }
 }
 
 .mobile_menu__email.open {
@@ -779,7 +804,13 @@ main {
 .presentation {
   position: relative;
   height: 100vh;
-  padding: 120px 0;
+  padding: 7.5rem 0;
+}
+
+@media (max-width: 667px) and (min-width: 375px) and (max-height: 667px) {
+  .presentation {
+    padding: 6.25rem 0;
+  }
 }
 
 .presentation__title {
@@ -788,6 +819,12 @@ main {
   line-height: 1.1;
   color: #ffffff;
   font-weight: 400;
+}
+
+@media (max-width: 667px) and (min-width: 375px) and (max-height: 667px) {
+  .presentation__title {
+    font-size: 2.875rem;
+  }
 }
 
 .presentation__title div:nth-child(3) {
@@ -813,9 +850,23 @@ main {
           animation: spin 15s infinite linear;
 }
 
+@media (max-width: 667px) and (min-width: 375px) and (max-height: 667px) {
+  .presentation__svg svg#circle {
+    height: 150px;
+  }
+}
+
 .presentation__svg svg#arrow {
   -webkit-transform: translate(-250%, -100%);
           transform: translate(-250%, -100%);
+}
+
+@media (max-width: 667px) and (min-width: 375px) and (max-height: 667px) {
+  .presentation__svg svg#arrow {
+    height: 40px;
+    -webkit-transform: translate(-250%, -130%);
+            transform: translate(-250%, -130%);
+  }
 }
 
 .presentation__email {
@@ -847,6 +898,12 @@ main {
 .about,
 .projects_showcase {
   padding: 0 2rem 4rem;
+}
+
+@media (max-width: 667px) and (min-width: 375px) and (max-height: 667px) {
+  .about {
+    padding-top: 2rem;
+  }
 }
 
 .about__paragraph {
@@ -999,7 +1056,7 @@ main {
 }
 
 .showcase__grid__article:first-child {
-  border-top: 1px solid rgba(209, 237, 93, 0.8);
+  border-top: 1px solid rgba(209, 237, 93, 0.4);
 }
 
 @media (min-width: 75em) {
@@ -1129,7 +1186,13 @@ main {
 .about_landing {
   position: relative;
   height: 100vh;
-  padding: 120px 2rem;
+  padding: 7.5rem 2rem;
+}
+
+@media (max-width: 667px) and (min-width: 375px) and (max-height: 667px) {
+  .about_landing {
+    padding: 6.25rem 2rem;
+  }
 }
 
 .about_landing__title {
@@ -1137,6 +1200,12 @@ main {
   line-height: 1.1;
   color: #ffffff;
   font-weight: 400;
+}
+
+@media (max-width: 667px) and (min-width: 375px) and (max-height: 667px) {
+  .about_landing__title {
+    margin-top: 0;
+  }
 }
 
 .about_landing__title div:nth-child(3) {
@@ -1166,12 +1235,24 @@ main {
   margin-bottom: 0.4rem;
 }
 
+@media (max-width: 667px) and (min-width: 375px) and (max-height: 667px) {
+  .about_landing_contacts h5 {
+    font-size: 1.0625rem;
+  }
+}
+
 .about_landing_contacts p {
   color: #ffffff;
   font-size: 1.125rem;
   font-weight: 400;
   margin: 0;
   margin-bottom: 0.4rem;
+}
+
+@media (max-width: 667px) and (min-width: 375px) and (max-height: 667px) {
+  .about_landing_contacts p {
+    font-size: 1.0625rem;
+  }
 }
 
 .about_landing_contacts p:last-child {
@@ -1215,7 +1296,13 @@ main {
 
 .showcase_landing {
   position: relative;
-  padding: 120px 2rem;
+  padding: 7.5rem 2rem;
+}
+
+@media (max-width: 667px) and (min-width: 375px) and (max-height: 667px) {
+  .showcase_landing {
+    padding: 6.25rem 2rem;
+  }
 }
 
 .showcase_landing__title {

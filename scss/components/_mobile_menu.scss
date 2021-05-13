@@ -42,6 +42,11 @@
     opacity: 0;
     transition: all 0.8s;
 
+    @include breakpoint-width-height(667px, 375px, 667px) {
+      font-size: $_17px;
+      margin-bottom: 0.1rem;
+    }
+
     &.open {
       visibility: visible;
       pointer-events: auto;
@@ -63,6 +68,10 @@
       transform: none;
       height: 100%;
       padding: 2rem 2rem 16vh;
+
+      @include breakpoint-width-height(667px, 375px, 667px) {
+        margin-top: 6vh;
+      }
 
       @include breakpoint-down(phone) {
         padding: 2rem 2rem 4vh;
@@ -148,6 +157,10 @@
     opacity: 0;
     transition: all 0.8s;
 
+    @include breakpoint-width-height(667px, 375px, 667px) {
+      top: 34%;
+    }
+
     &.open {
       visibility: visible;
       pointer-events: auto;
@@ -172,6 +185,10 @@
     visibility: hidden;
     opacity: 0;
     transition: all 0.8s;
+
+    @include breakpoint-width-height(667px, 375px, 667px) {
+      top: 70%;
+    }
 
     &.open {
       visibility: visible;
