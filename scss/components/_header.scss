@@ -43,7 +43,7 @@
     }
 
     @include breakpoint-up(desktop) {
-      font-size: $_18px;
+      font-size: $_16px;
     }
 
     @include breakpoint-up(large) {
@@ -95,7 +95,7 @@
       }
 
       @include breakpoint-up(desktop) {
-        font-size: $_18px;
+        font-size: $_16px;
       }
 
       @include breakpoint-up(large) {
@@ -140,6 +140,10 @@
 
     @include breakpoint-up(tablet) {
       font-size: $_26px;
+    }
+
+    @include breakpoint-up(desktop) {
+      font-size: $_22px;
     }
   }
 

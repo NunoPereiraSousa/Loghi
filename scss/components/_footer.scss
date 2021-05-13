@@ -3,6 +3,10 @@
 
   padding: 1rem 2rem;
 
+  @include breakpoint-up(desktop) {
+    padding: 0 5.5vw 10vh;
+  }
+
   a {
     color: $white;
   }

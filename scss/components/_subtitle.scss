@@ -12,6 +12,14 @@
     margin-bottom: 6vh;
   }
 
+  @include breakpoint-up(tablet) {
+    font-size: $_100px;
+    font-weight: 500;
+    line-height: 1.2;
+
+    margin-bottom: 16vh;
+  }
+
   span {
     color: $yellow;
 

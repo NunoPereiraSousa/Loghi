@@ -8,6 +8,10 @@
     padding: 6.25rem 0;
   }
 
+  @include breakpoint-up(desktop) {
+    padding: 20vh 5.5vw 0;
+  }
+
   &__title {
     padding: 0 2rem;
     font-size: $_50px;
@@ -23,11 +27,22 @@
       font-size: $_70px;
     }
 
+    @include breakpoint-up(desktop) {
+      padding: 0;
+      font-size: $_80px;
+    }
+
     div {
       &:nth-child(3) {
         color: $yellow;
 
         transform: rotate(-4deg);
+
+        @include breakpoint-up(desktop) {
+          transform: rotate(-4deg) translateY(-40%);
+
+          text-shadow: -12px 12px 8px rgba($color: $yellow, $alpha: 0.2);
+        }
       }
     }
   }
@@ -42,6 +57,15 @@
       padding: 1rem 0;
       margin: 16vh 0;
     }
+
+    @include breakpoint-up(desktop) {
+      position: absolute;
+      top: -15%;
+      left: 10%;
+      transform-origin: 0 center;
+      transform: rotate(30deg);
+      margin: 0 0;
+    }
   }
 
   &__svg {
@@ -53,6 +77,12 @@
       @include breakpoint-width-height(667px, 375px, 667px) {
         height: 150px;
       }
+
+      @include breakpoint-up(desktop) {
+        position: absolute;
+        bottom: 10%;
+        left: calc(50% - 75px);
+      }
     }
 
     svg#arrow {
@@ -61,6 +91,14 @@
       @include breakpoint-width-height(667px, 375px, 667px) {
         height: 40px;
         transform: translate(-250%, -130%);
+      }
+
+      @include breakpoint-up(desktop) {
+        height: 36px;
+        position: absolute;
+        bottom: 10%;
+        left: calc(50% - 10px);
+        transform: translate(-5px, -60px);
       }
     }
   }
@@ -77,6 +115,11 @@
       right: 2rem;
     }
 
+    @include breakpoint-up(desktop) {
+      top: 40%;
+      right: 5.5vw;
+    }
+
     &.open {
       visibility: visible;
       pointer-events: auto;
@@ -87,6 +130,13 @@
       color: $white;
       font-size: $_14px;
       text-decoration: underline $white;
+
+      cursor: pointer;
+
+      @include breakpoint-up(desktop) {
+        font-size: $_16px;
+        text-decoration: none;
+      }
     }
   }
 }
@@ -98,6 +148,10 @@
 
   @include breakpoint-up(tablet) {
     padding: 4rem 2rem;
+  }
+
+  @include breakpoint-up(tablet) {
+    padding: 20vh 5.5vw 10vh;
   }
 }
 
@@ -118,6 +172,28 @@
 
     &:last-child {
       margin-top: 40px;
+
+      @include breakpoint-up(desktop) {
+        margin-left: auto;
+        margin-top: 20vh;
+      }
+    }
+
+    @include breakpoint-up(desktop) {
+      font-family: $headers;
+      font-size: $_50px;
+      font-weight: 100;
+      color: $white;
+
+      width: 60vw;
+    }
+  }
+}
+
+.services {
+  &__grid {
+    @include breakpoint-up(desktop) {
+      grid-template-columns: 1fr 1fr;
     }
   }
 }
@@ -129,10 +205,18 @@
     padding: 0.6rem 0;
     margin: 10vh 0;
     transform: rotate(4deg);
+
+    @include breakpoint-up(desktop) {
+      margin: 20vh 0;
+    }
   }
 
   &__banner {
     margin-bottom: 0;
+
+    @include breakpoint-up(desktop) {
+      margin-bottom: 10vh;
+    }
   }
 
   &__banner2 {
@@ -140,6 +224,10 @@
 
     @include breakpoint-up(tablet) {
       margin-bottom: 20vh;
+    }
+
+    @include breakpoint-up(desktop) {
+      margin-bottom: 40vh;
     }
   }
 }

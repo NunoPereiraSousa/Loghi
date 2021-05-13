@@ -76,3 +76,21 @@
     transform: translateX(calc(-500px * 3));
   }
 }
+
+@keyframes carousel-desktop-carousels {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-1200px * 3));
+  }
+}
+
+@keyframes carousel-desktop-carousels2 {
+  0% {
+    transform: translateX(calc(-1200px * 3));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

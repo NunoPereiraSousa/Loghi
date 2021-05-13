@@ -20,6 +20,18 @@
         animation: carousel-tablet-carousels 20s linear infinite;
         width: calc(500px * 6);
       }
+
+      @include breakpoint-up(desktop) {
+        animation: carousel-desktop-carousels 20s linear infinite;
+        width: calc(1200px * 6);
+      }
+    }
+
+    &.double2 {
+      @include breakpoint-up(desktop) {
+        animation: carousel-desktop-carousels2 30s linear infinite;
+        width: calc(1200px * 6);
+      }
     }
 
     &.track_services {
@@ -45,6 +57,10 @@
       @include breakpoint-up(tablet) {
         width: 500px;
       }
+
+      @include breakpoint-up(desktop) {
+        width: 1200px;
+      }
     }
 
     h3 {
@@ -60,9 +76,19 @@
         }
       }
 
+      &.landing2 {
+        @include breakpoint-up(desktop) {
+          font-size: $_50px;
+        }
+      }
+
       &.services {
         color: $white;
         font-size: $_34px;
+
+        @include breakpoint-up(desktop) {
+          font-size: $_50px;
+        }
 
         // svg {
         //   margin-left: 2rem;
