@@ -13,6 +13,10 @@
     color: $white;
     font-weight: 400;
 
+    @include breakpoint-up(tablet) {
+      font-size: $_70px;
+    }
+
     div {
       &:nth-child(2) {
         color: $yellow;
@@ -26,6 +30,11 @@
     color: $grey;
 
     font-size: $_18px;
+
+    @include breakpoint-up(tablet) {
+      font-size: $_30px;
+      margin: 10vh 0;
+    }
   }
 
   &__grid {

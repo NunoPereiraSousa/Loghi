@@ -1,5 +1,9 @@
 .services__grid__card {
-  padding: 30px 2rem;
+  padding: 1.875rem 2rem;
+
+  @include breakpoint-up(tablet) {
+    padding: 3.125rem 3rem;
+  }
 
   &:first-child {
     border: 1px solid #464646;
@@ -13,18 +17,31 @@
 
   &__red {
     background-color: $red;
-    padding: 30px 2rem;
+    padding: 1.875rem 2rem;
 
     position: relative;
+
+    @include breakpoint-up(tablet) {
+      padding: 3.125rem 3rem;
+    }
 
     h2 {
       margin-top: 0;
       line-height: 1.1;
       color: $yellow;
+      font-weight: 500;
+
+      @include breakpoint-up(tablet) {
+        font-size: $_34px;
+      }
     }
 
     p {
       color: $white;
+
+      @include breakpoint-up(tablet) {
+        font-size: $_30px;
+      }
     }
 
     svg {
@@ -32,6 +49,10 @@
       bottom: 10%;
       right: 10%;
       height: 20px;
+
+      @include breakpoint-up(tablet) {
+        height: 40px;
+      }
     }
   }
 
@@ -40,10 +61,18 @@
     font-size: $_20px;
     margin-top: 0;
     color: $yellow;
+
+    @include breakpoint-up(tablet) {
+      font-size: $_34px;
+    }
   }
 
   p {
     margin-bottom: 0;
     color: $grey;
+
+    @include breakpoint-up(tablet) {
+      font-size: $_30px;
+    }
   }
 }

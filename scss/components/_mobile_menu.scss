@@ -77,6 +77,10 @@
         padding: 2rem 2rem 4vh;
       }
 
+      @include breakpoint-up(tablet) {
+        margin-top: 6vh;
+      }
+
       @include breakpoint-up(iPadPro) {
         padding: 2rem 10vw 16vh;
       }
@@ -159,6 +163,10 @@
 
     @include breakpoint-width-height(667px, 375px, 667px) {
       top: 34%;
+    }
+
+    @include breakpoint-up(tablet) {
+      transform: translateY(-150%);
     }
 
     &.open {

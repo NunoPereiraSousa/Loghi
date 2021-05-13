@@ -18,6 +18,10 @@
       margin-top: 0;
     }
 
+    @include breakpoint-up(tablet) {
+      font-size: $_70px;
+    }
+
     div {
       &:nth-child(3) {
         color: $yellow;
@@ -36,6 +40,10 @@
       font-size: $_24px;
 
       margin: 0 0 1rem;
+
+      @include breakpoint-up(tablet) {
+        font-size: $_30px;
+      }
     }
 
     h5 {
@@ -48,6 +56,11 @@
 
       @include breakpoint-width-height(667px, 375px, 667px) {
         font-size: $_17px;
+      }
+
+      @include breakpoint-up(tablet) {
+        font-size: $_24px;
+        margin-bottom: 0.6rem;
       }
     }
 
@@ -62,6 +75,11 @@
         font-size: $_17px;
       }
 
+      @include breakpoint-up(tablet) {
+        font-size: $_24px;
+        margin-bottom: 0.6rem;
+      }
+
       &:last-child {
         text-decoration: 2px underline $white;
       }
@@ -70,6 +88,14 @@
     a {
       font-size: $_16px;
       color: $white;
+
+      @include breakpoint-width-height(667px, 375px, 667px) {
+        font-size: $_17px;
+      }
+
+      @include breakpoint-up(tablet) {
+        font-size: $_24px;
+      }
     }
   }
 
@@ -78,7 +104,15 @@
     bottom: 4%;
     right: 2rem;
 
+    height: 55px;
+    width: 55px;
+
     animation: spin 8s linear infinite;
+
+    @include breakpoint-up(tablet) {
+      height: 5rem;
+      width: 5rem;
+    }
   }
 }
 
@@ -93,6 +127,10 @@
     &:nth-child(3) {
       margin-top: 5vh;
     }
+
+    @include breakpoint-up(tablet) {
+      font-size: $_30px;
+    }
   }
 
   &_team {
@@ -102,5 +140,9 @@
     font-family: $headers;
     font-weight: 600;
     font-size: $_30px;
+
+    @include breakpoint-up(tablet) {
+      font-size: $_50px;
+    }
   }
 }

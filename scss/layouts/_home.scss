@@ -19,6 +19,10 @@
       font-size: $_46px;
     }
 
+    @include breakpoint-up(tablet) {
+      font-size: $_70px;
+    }
+
     div {
       &:nth-child(3) {
         color: $yellow;
@@ -33,6 +37,11 @@
     background-color: $white;
     padding: 0.6rem 0;
     transform: rotate(4deg);
+
+    @include breakpoint-up(tablet) {
+      padding: 1rem 0;
+      margin: 16vh 0;
+    }
   }
 
   &__svg {
@@ -64,6 +73,10 @@
     transform-origin: center bottom;
     transition: all 0.8s;
 
+    @include breakpoint-up(tablet) {
+      right: 2rem;
+    }
+
     &.open {
       visibility: visible;
       pointer-events: auto;
@@ -82,6 +95,10 @@
 .about,
 .projects_showcase {
   padding: 0 2rem 4rem;
+
+  @include breakpoint-up(tablet) {
+    padding: 4rem 2rem;
+  }
 }
 
 .about {
@@ -94,6 +111,10 @@
     font-size: $_18px;
 
     margin: 0;
+
+    @include breakpoint-up(tablet) {
+      font-size: $_30px;
+    }
 
     &:last-child {
       margin-top: 40px;
@@ -116,5 +137,9 @@
 
   &__banner2 {
     margin-top: 5vh;
+
+    @include breakpoint-up(tablet) {
+      margin-bottom: 20vh;
+    }
   }
 }

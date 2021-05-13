@@ -7,9 +7,19 @@
     animation: carousel-phone 20s linear infinite;
     width: calc(400px * 6);
 
+    @include breakpoint-up(tablet) {
+      animation: carousel-tablet 20s linear infinite;
+      width: calc(500px * 6);
+    }
+
     &.double {
       width: calc(350px * 6);
       animation: carousel-phone-carousels 12s linear infinite;
+
+      @include breakpoint-up(tablet) {
+        animation: carousel-tablet-carousels 20s linear infinite;
+        width: calc(500px * 6);
+      }
     }
 
     &.track_services {
@@ -21,12 +31,20 @@
   .slide {
     width: 400px;
 
+    @include breakpoint-up(tablet) {
+      width: 500px;
+    }
+
     &.slide_services {
       width: 240px;
     }
 
     &.slide_carousels {
       width: 350px;
+
+      @include breakpoint-up(tablet) {
+        width: 500px;
+      }
     }
 
     h3 {
@@ -36,6 +54,10 @@
       &.landing {
         font-size: $_16px;
         white-space: nowrap;
+
+        @include breakpoint-up(tablet) {
+          font-size: $_22px;
+        }
       }
 
       &.services {

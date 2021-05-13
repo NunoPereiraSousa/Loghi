@@ -100,6 +100,28 @@
   }
 }
 
+@-webkit-keyframes carousel-tablet {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-500px * 3));
+            transform: translateX(calc(-500px * 3));
+  }
+}
+
+@keyframes carousel-tablet {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-500px * 3));
+            transform: translateX(calc(-500px * 3));
+  }
+}
+
 @-webkit-keyframes carousel-phone-services {
   0% {
     -webkit-transform: translateX(0);
@@ -141,6 +163,28 @@
   100% {
     -webkit-transform: translateX(calc(-350px * 3));
             transform: translateX(calc(-350px * 3));
+  }
+}
+
+@-webkit-keyframes carousel-tablet-carousels {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-500px * 3));
+            transform: translateX(calc(-500px * 3));
+  }
+}
+
+@keyframes carousel-tablet-carousels {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-500px * 3));
+            transform: translateX(calc(-500px * 3));
   }
 }
 
@@ -593,6 +637,12 @@ main {
   }
 }
 
+@media (min-width: 48em) {
+  .mobile_menu__content__pos {
+    margin-top: 6vh;
+  }
+}
+
 @media (min-width: 64em) {
   .mobile_menu__content__pos {
     padding: 2rem 10vw 16vh;
@@ -686,6 +736,13 @@ main {
 @media (max-width: 667px) and (min-width: 375px) and (max-height: 667px) {
   .mobile_menu__socials {
     top: 34%;
+  }
+}
+
+@media (min-width: 48em) {
+  .mobile_menu__socials {
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
   }
 }
 
@@ -827,6 +884,12 @@ main {
   }
 }
 
+@media (min-width: 48em) {
+  .presentation__title {
+    font-size: 4.375rem;
+  }
+}
+
 .presentation__title div:nth-child(3) {
   color: #d1ed5d;
   -webkit-transform: rotate(-4deg);
@@ -839,6 +902,13 @@ main {
   padding: 0.6rem 0;
   -webkit-transform: rotate(4deg);
           transform: rotate(4deg);
+}
+
+@media (min-width: 48em) {
+  .presentation__banner {
+    padding: 1rem 0;
+    margin: 16vh 0;
+  }
 }
 
 .presentation__svg {
@@ -881,6 +951,12 @@ main {
   transition: all 0.8s;
 }
 
+@media (min-width: 48em) {
+  .presentation__email {
+    right: 2rem;
+  }
+}
+
 .presentation__email.open {
   visibility: visible;
   pointer-events: auto;
@@ -900,6 +976,14 @@ main {
   padding: 0 2rem 4rem;
 }
 
+@media (min-width: 48em) {
+  .services,
+  .about,
+  .projects_showcase {
+    padding: 4rem 2rem;
+  }
+}
+
 @media (max-width: 667px) and (min-width: 375px) and (max-height: 667px) {
   .about {
     padding-top: 2rem;
@@ -910,6 +994,12 @@ main {
   color: #c9c9c9;
   font-size: 1.125rem;
   margin: 0;
+}
+
+@media (min-width: 48em) {
+  .about__paragraph {
+    font-size: 1.875rem;
+  }
 }
 
 .about__paragraph:last-child {
@@ -932,6 +1022,12 @@ main {
   margin-top: 5vh;
 }
 
+@media (min-width: 48em) {
+  .carousels__banner2 {
+    margin-bottom: 20vh;
+  }
+}
+
 .carousel {
   margin: auto;
   overflow: hidden;
@@ -944,10 +1040,26 @@ main {
   width: calc(400px * 6);
 }
 
+@media (min-width: 48em) {
+  .carousel .slide-track {
+    -webkit-animation: carousel-tablet 20s linear infinite;
+            animation: carousel-tablet 20s linear infinite;
+    width: calc(500px * 6);
+  }
+}
+
 .carousel .slide-track.double {
   width: calc(350px * 6);
   -webkit-animation: carousel-phone-carousels 12s linear infinite;
           animation: carousel-phone-carousels 12s linear infinite;
+}
+
+@media (min-width: 48em) {
+  .carousel .slide-track.double {
+    -webkit-animation: carousel-tablet-carousels 20s linear infinite;
+            animation: carousel-tablet-carousels 20s linear infinite;
+    width: calc(500px * 6);
+  }
 }
 
 .carousel .slide-track.track_services {
@@ -960,12 +1072,24 @@ main {
   width: 400px;
 }
 
+@media (min-width: 48em) {
+  .carousel .slide {
+    width: 500px;
+  }
+}
+
 .carousel .slide.slide_services {
   width: 240px;
 }
 
 .carousel .slide.slide_carousels {
   width: 350px;
+}
+
+@media (min-width: 48em) {
+  .carousel .slide.slide_carousels {
+    width: 500px;
+  }
 }
 
 .carousel .slide h3 {
@@ -976,6 +1100,12 @@ main {
 .carousel .slide h3.landing {
   font-size: 1rem;
   white-space: nowrap;
+}
+
+@media (min-width: 48em) {
+  .carousel .slide h3.landing {
+    font-size: 1.375rem;
+  }
 }
 
 .carousel .slide h3.services {
@@ -992,6 +1122,13 @@ main {
   line-height: 1.3;
 }
 
+@media (min-width: 48em) {
+  .subtitle {
+    font-size: 3.75rem;
+    margin-bottom: 6vh;
+  }
+}
+
 .subtitle span {
   color: #d1ed5d;
 }
@@ -1001,7 +1138,13 @@ main {
 }
 
 .services__grid__card {
-  padding: 30px 2rem;
+  padding: 1.875rem 2rem;
+}
+
+@media (min-width: 48em) {
+  .services__grid__card {
+    padding: 3.125rem 3rem;
+  }
 }
 
 .services__grid__card:first-child {
@@ -1016,18 +1159,37 @@ main {
 
 .services__grid__card__red {
   background-color: #ff4d26;
-  padding: 30px 2rem;
+  padding: 1.875rem 2rem;
   position: relative;
+}
+
+@media (min-width: 48em) {
+  .services__grid__card__red {
+    padding: 3.125rem 3rem;
+  }
 }
 
 .services__grid__card__red h2 {
   margin-top: 0;
   line-height: 1.1;
   color: #d1ed5d;
+  font-weight: 500;
+}
+
+@media (min-width: 48em) {
+  .services__grid__card__red h2 {
+    font-size: 2.125rem;
+  }
 }
 
 .services__grid__card__red p {
   color: #ffffff;
+}
+
+@media (min-width: 48em) {
+  .services__grid__card__red p {
+    font-size: 1.875rem;
+  }
 }
 
 .services__grid__card__red svg {
@@ -1037,6 +1199,12 @@ main {
   height: 20px;
 }
 
+@media (min-width: 48em) {
+  .services__grid__card__red svg {
+    height: 40px;
+  }
+}
+
 .services__grid__card h2 {
   font-weight: 500;
   font-size: 1.25rem;
@@ -1044,9 +1212,21 @@ main {
   color: #d1ed5d;
 }
 
+@media (min-width: 48em) {
+  .services__grid__card h2 {
+    font-size: 2.125rem;
+  }
+}
+
 .services__grid__card p {
   margin-bottom: 0;
   color: #c9c9c9;
+}
+
+@media (min-width: 48em) {
+  .services__grid__card p {
+    font-size: 1.875rem;
+  }
 }
 
 .showcase__grid__article {
@@ -1139,8 +1319,8 @@ main {
 
 @media (min-width: 48em) {
   .showcase__grid__article h5 {
-    font-size: 1.25rem;
-    margin-bottom: 3.875rem;
+    font-size: 1.5rem;
+    line-height: 1.7;
   }
 }
 
@@ -1178,9 +1358,23 @@ main {
           column-gap: 1rem;
 }
 
+@media (min-width: 48em) {
+  .footer_socials {
+    font-size: 1.5rem;
+    -webkit-column-gap: 3rem;
+            column-gap: 3rem;
+  }
+}
+
 .footer_email a {
   -webkit-text-decoration: 1px underline #ffffff;
           text-decoration: 1px underline #ffffff;
+}
+
+@media (min-width: 48em) {
+  .footer_email a {
+    font-size: 1.5rem;
+  }
 }
 
 .about_landing {
@@ -1208,6 +1402,12 @@ main {
   }
 }
 
+@media (min-width: 48em) {
+  .about_landing__title {
+    font-size: 4.375rem;
+  }
+}
+
 .about_landing__title div:nth-child(3) {
   color: #d1ed5d;
   -webkit-transform: rotate(-4deg);
@@ -1223,6 +1423,12 @@ main {
   font-family: "Raleway";
   font-size: 1.5rem;
   margin: 0 0 1rem;
+}
+
+@media (min-width: 48em) {
+  .about_landing_contacts h3 {
+    font-size: 1.875rem;
+  }
 }
 
 .about_landing_contacts h5 {
@@ -1241,6 +1447,13 @@ main {
   }
 }
 
+@media (min-width: 48em) {
+  .about_landing_contacts h5 {
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+  }
+}
+
 .about_landing_contacts p {
   color: #ffffff;
   font-size: 1.125rem;
@@ -1255,6 +1468,13 @@ main {
   }
 }
 
+@media (min-width: 48em) {
+  .about_landing_contacts p {
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+  }
+}
+
 .about_landing_contacts p:last-child {
   -webkit-text-decoration: 2px underline #ffffff;
           text-decoration: 2px underline #ffffff;
@@ -1265,12 +1485,33 @@ main {
   color: #ffffff;
 }
 
+@media (max-width: 667px) and (min-width: 375px) and (max-height: 667px) {
+  .about_landing_contacts a {
+    font-size: 1.0625rem;
+  }
+}
+
+@media (min-width: 48em) {
+  .about_landing_contacts a {
+    font-size: 1.5rem;
+  }
+}
+
 .about_landing svg {
   position: absolute;
   bottom: 4%;
   right: 2rem;
+  height: 55px;
+  width: 55px;
   -webkit-animation: spin 8s linear infinite;
           animation: spin 8s linear infinite;
+}
+
+@media (min-width: 48em) {
+  .about_landing svg {
+    height: 5rem;
+    width: 5rem;
+  }
 }
 
 .about_us {
@@ -1286,12 +1527,24 @@ main {
   margin-top: 5vh;
 }
 
+@media (min-width: 48em) {
+  .about_us p {
+    font-size: 1.875rem;
+  }
+}
+
 .about_us_team {
   margin: 7vh 0 4vh;
   color: #ff4d26;
   font-family: "Raleway";
   font-weight: 600;
   font-size: 1.875rem;
+}
+
+@media (min-width: 48em) {
+  .about_us_team {
+    font-size: 3.125rem;
+  }
 }
 
 .showcase_landing {
@@ -1312,6 +1565,12 @@ main {
   font-weight: 400;
 }
 
+@media (min-width: 48em) {
+  .showcase_landing__title {
+    font-size: 4.375rem;
+  }
+}
+
 .showcase_landing__title div:nth-child(2) {
   color: #d1ed5d;
   -webkit-transform: rotate(-4deg);
@@ -1321,6 +1580,13 @@ main {
 .showcase_landing p {
   color: #c9c9c9;
   font-size: 1.125rem;
+}
+
+@media (min-width: 48em) {
+  .showcase_landing p {
+    font-size: 1.875rem;
+    margin: 10vh 0;
+  }
 }
 
 .showcase_landing__grid {

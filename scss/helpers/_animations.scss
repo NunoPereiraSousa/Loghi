@@ -41,6 +41,15 @@
   }
 }
 
+@keyframes carousel-tablet {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-500px * 3));
+  }
+}
+
 @keyframes carousel-phone-services {
   0% {
     transform: translateX(0);
@@ -56,5 +65,14 @@
   }
   100% {
     transform: translateX(calc(-350px * 3));
+  }
+}
+
+@keyframes carousel-tablet-carousels {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-500px * 3));
   }
 }
