@@ -13,7 +13,7 @@
     }
 
     &.double {
-      width: calc(350px * 6);
+      width: calc(400px * 6);
       animation: carousel-phone-carousels 12s linear infinite;
 
       @include breakpoint-up(tablet) {
@@ -52,7 +52,7 @@
     }
 
     &.slide_carousels {
-      width: 350px;
+      width: 400px;
 
       @include breakpoint-up(tablet) {
         width: 500px;
@@ -77,6 +77,8 @@
       }
 
       &.landing2 {
+        white-space: nowrap;
+
         @include breakpoint-up(desktop) {
           font-size: $_50px;
         }

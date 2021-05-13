@@ -29,7 +29,11 @@
 
     @include breakpoint-up(desktop) {
       padding: 0;
-      font-size: $_80px;
+      font-size: $_90px;
+    }
+
+    @include breakpoint-up(large) {
+      font-size: $_120px;
     }
 
     div {
@@ -61,7 +65,7 @@
     @include breakpoint-up(desktop) {
       position: absolute;
       top: -15%;
-      left: 10%;
+      left: 15%;
       transform-origin: 0 center;
       transform: rotate(30deg);
       margin: 0 0;
@@ -177,6 +181,10 @@
         margin-left: auto;
         margin-top: 20vh;
       }
+
+      @include breakpoint-up(large) {
+        margin-top: 20vh;
+      }
     }
 
     @include breakpoint-up(desktop) {
@@ -187,10 +195,18 @@
 
       width: 60vw;
     }
+
+    @include breakpoint-up(large) {
+      width: 50vw;
+    }
   }
 }
 
 .services {
+  @include breakpoint-up(large) {
+    padding-top: 10vh;
+  }
+
   &__grid {
     @include breakpoint-up(desktop) {
       grid-template-columns: 1fr 1fr;
@@ -224,10 +240,6 @@
 
     @include breakpoint-up(tablet) {
       margin-bottom: 20vh;
-    }
-
-    @include breakpoint-up(desktop) {
-      margin-bottom: 40vh;
     }
   }
 }

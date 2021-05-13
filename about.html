@@ -108,7 +108,7 @@
     </div>
 
     <main class="main">
-      <section class="about_landing">
+      <section class="about_landing hide-for-desktop">
         <h1 class="about_landing__title">
           <div>Contact us</div>
           <div>to build</div>
@@ -166,6 +166,20 @@
         </svg>
       </section>
 
+      <section
+        class="
+          about_landing_desktop
+          hide-for-mobile
+          flex flex-ai-c flex-jc-c flex-fd-c
+        "
+      >
+        <h1 class="about_landing_desktop__title">Say hello</h1>
+        <form class="flex flex-ai-c flex-jc-c flex-fd-c">
+          <input type="email" placeholder="Type your email here" /><br />
+          <input type="submit" value="Send" id="submitBtn" />
+        </form>
+      </section>
+
       <section class="about_us">
         <h1 class="subtitle">
           About <br />
@@ -179,27 +193,31 @@
 
         <p>
           We are based in Portugal but we have experience in working
-          internacional as freelancers.
+          international as freelancers.
         </p>
 
         <h1 class="about_us_team">Nuno PS 🚀</h1>
 
-        <p>
+        <p class="p_img">
           I'm a senior college student with the highest GPA in a web development
           degree. I'm passionate about learning the latest and greatest
           technologies whether that's front-end or back-end. Helping people
           achieving their maximum potential is also a passion I have, and
           something I strive to do 24/7.
+
+          <img class="hide-for-mobile" src="./assets/Nuno.jpeg" alt="Nuno" />
         </p>
 
-        <h1 class="about_us_team">Titas 🎡</h1>
+        <h1 class="about_us_team top">Titas 🎡</h1>
 
-        <p>
+        <p class="p_img">
           I'm a senior college student with the highest GPA in a web development
           degree. I'm passionate about learning the latest and greatest
           technologies whether that's front-end or back-end. Helping people
           achieving their maximum potential is also a passion I have, and
           something I strive to do 24/7.
+
+          <img class="hide-for-mobile" src="./assets/Titas.png" alt="Titas" />
         </p>
       </section>
 

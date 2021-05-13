@@ -20,6 +20,10 @@
     margin-bottom: 16vh;
   }
 
+  @include breakpoint-up(large) {
+    font-size: $_120px;
+  }
+
   span {
     color: $yellow;
 

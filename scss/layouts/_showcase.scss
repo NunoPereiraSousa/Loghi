@@ -7,6 +7,10 @@
     padding: 6.25rem 2rem;
   }
 
+  @include breakpoint-up(tablet) {
+    padding: 20vh 5.5vw 10vh;
+  }
+
   &__title {
     font-size: $_50px;
     line-height: 1.1;
@@ -17,11 +21,25 @@
       font-size: $_70px;
     }
 
+    @include breakpoint-up(desktop) {
+      font-size: $_90px;
+    }
+
+    @include breakpoint-up(large) {
+      font-size: $_120px;
+    }
+
     div {
       &:nth-child(2) {
         color: $yellow;
 
         transform: rotate(-4deg);
+
+        @include breakpoint-up(desktop) {
+          transform: rotate(-4deg) translateY(-30%);
+
+          text-shadow: -12px 12px 8px rgba($color: $yellow, $alpha: 0.2);
+        }
       }
     }
   }
@@ -34,6 +52,16 @@
     @include breakpoint-up(tablet) {
       font-size: $_30px;
       margin: 10vh 0;
+    }
+
+    @include breakpoint-up(desktop) {
+      font-family: $headers;
+      font-size: $_46px;
+      font-weight: 100;
+      color: $white;
+
+      width: 60vw;
+      margin: 20vh 0 30vh;
     }
   }
 
@@ -56,6 +84,11 @@
       row-gap: 5rem;
     }
 
+    @include breakpoint-up(large) {
+      row-gap: 8rem;
+      margin-bottom: 20vh;
+    }
+
     svg {
       height: 50px;
 
@@ -72,6 +105,10 @@
 
       &:hover {
         filter: grayscale(0%);
+      }
+
+      @include breakpoint-up(large) {
+        height: 120px;
       }
     }
   }

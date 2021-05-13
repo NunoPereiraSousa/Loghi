@@ -8,6 +8,10 @@
     padding: 6.25rem 2rem;
   }
 
+  @include breakpoint-up(tablet) {
+    padding: 10vh 2ren;
+  }
+
   &__title {
     font-size: $_50px;
     line-height: 1.1;
@@ -22,17 +26,36 @@
       font-size: $_70px;
     }
 
+    @include breakpoint-up(desktop) {
+      font-size: $_90px;
+    }
+
     div {
       &:nth-child(3) {
         color: $yellow;
 
         transform: rotate(-4deg);
+
+        @include breakpoint-up(desktop) {
+          transform: rotate(-4deg) translateY(-15%);
+
+          text-shadow: -12px 12px 8px rgba($color: $yellow, $alpha: 0.2);
+        }
       }
     }
   }
 
   &_contacts {
     margin-top: 16vh;
+
+    @include breakpoint-up(desktop) {
+      margin-top: 30vh;
+      margin-right: 30vw;
+      display: grid;
+      grid-template-rows: repeat(6, min-content);
+      justify-content: flex-end;
+      text-align: left;
+    }
 
     h3 {
       color: $yellow;
@@ -43,6 +66,11 @@
 
       @include breakpoint-up(tablet) {
         font-size: $_30px;
+      }
+
+      @include breakpoint-up(desktop) {
+        font-size: $_50px;
+        margin-bottom: 2rem;
       }
     }
 
@@ -62,6 +90,10 @@
         font-size: $_24px;
         margin-bottom: 0.6rem;
       }
+
+      @include breakpoint-up(desktop) {
+        font-size: $_34px;
+      }
     }
 
     p {
@@ -80,6 +112,10 @@
         margin-bottom: 0.6rem;
       }
 
+      @include breakpoint-up(desktop) {
+        font-size: $_34px;
+      }
+
       &:last-child {
         text-decoration: 2px underline $white;
       }
@@ -95,6 +131,10 @@
 
       @include breakpoint-up(tablet) {
         font-size: $_24px;
+      }
+
+      @include breakpoint-up(desktop) {
+        font-size: $_34px;
       }
     }
   }
@@ -113,11 +153,109 @@
       height: 5rem;
       width: 5rem;
     }
+
+    @include breakpoint-up(desktop) {
+      right: 10.5vw;
+      bottom: 50%;
+      height: 8rem;
+      width: 8rem;
+    }
+  }
+}
+
+.about_landing_desktop {
+  height: 100vh;
+
+  &__title {
+    color: $yellow;
+    font-size: $_140px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 5vh;
+    line-height: 0.9;
+
+    @include breakpoint-up(large) {
+      font-size: 12.5rem;
+    }
+  }
+
+  form {
+    input {
+      background-color: transparent;
+      border-top: 1px solid $white;
+      border-bottom: 1px solid $white;
+      border-right: none;
+      border-left: none;
+
+      padding: 2rem 10vw;
+      font-size: $_40px;
+      color: $yellow;
+      font-family: $headers;
+      font-weight: 400;
+
+      margin: 6vh 0;
+
+      @include breakpoint-up(large) {
+        font-size: $_60px;
+        margin: 8vh 0;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      &#submitBtn {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        border-radius: 50%;
+        padding: 0 4vw;
+        height: 20vh;
+        width: 20vh;
+        border: none;
+        background-color: $yellow;
+
+        font-size: $_24px;
+        text-transform: uppercase;
+
+        color: $black;
+        font-weight: 600;
+
+        cursor: pointer;
+        transition: all 0.2s;
+
+        &:hover {
+          transform: scale(1.1);
+          font-size: $_26px;
+        }
+      }
+    }
+
+    ::placeholder {
+      color: $grey;
+      font-family: $headers;
+      font-weight: 300;
+    }
   }
 }
 
 .about_us {
   padding: 4rem 2rem;
+
+  @include breakpoint-up(tablet) {
+    padding: 0 5.5vw 10vh;
+  }
+
+  .p_img {
+    position: relative;
+    z-index: 1;
+
+    &:last-child {
+      @include breakpoint-up(large) {
+        margin-bottom: 40vh;
+      }
+    }
+  }
 
   p {
     color: $grey;
@@ -126,10 +264,35 @@
 
     &:nth-child(3) {
       margin-top: 5vh;
+
+      @include breakpoint-up(desktop) {
+        margin-left: auto;
+        margin-top: 20vh;
+        margin-bottom: 20vh;
+      }
+    }
+
+    img {
+      position: absolute;
+      z-index: -1;
+      top: 25%;
+      right: -20vw;
+      width: 60%;
+
+      filter: grayscale(100%) opacity(20%);
     }
 
     @include breakpoint-up(tablet) {
       font-size: $_30px;
+    }
+
+    @include breakpoint-up(desktop) {
+      font-family: $headers;
+      font-size: $_50px;
+      font-weight: 100;
+      color: $white;
+
+      width: 60vw;
     }
   }
 
@@ -143,6 +306,22 @@
 
     @include breakpoint-up(tablet) {
       font-size: $_50px;
+    }
+
+    @include breakpoint-up(desktop) {
+      font-family: $headers;
+      font-size: $_70px;
+      margin-bottom: 10vh;
+    }
+  }
+
+  .top {
+    @include breakpoint-up(desktop) {
+      margin-top: 40vh;
+    }
+
+    @include breakpoint-up(large) {
+      margin-top: 56vh;
     }
   }
 }
