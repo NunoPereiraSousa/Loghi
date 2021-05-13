@@ -665,7 +665,7 @@ main {
   -webkit-transform: none;
           transform: none;
   height: 100%;
-  padding: 2rem 2rem 16vh;
+  padding: 16vh 2rem;
 }
 
 @media (max-width: 667px) and (min-width: 375px) and (max-height: 667px) {

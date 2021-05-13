@@ -67,7 +67,7 @@
       top: auto;
       transform: none;
       height: 100%;
-      padding: 2rem 2rem 16vh;
+      padding: 16vh 2rem;
 
       @include breakpoint-width-height(667px, 375px, 667px) {
         margin-top: 6vh;
