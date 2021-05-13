@@ -5,7 +5,7 @@
 
   .slide-track {
     animation: carousel-phone 20s linear infinite;
-    width: calc(400px * 6);
+    width: calc(320px * 6);
 
     @include breakpoint-up(tablet) {
       animation: carousel-tablet 20s linear infinite;
@@ -41,7 +41,7 @@
   }
 
   .slide {
-    width: 400px;
+    width: 320px;
 
     @include breakpoint-up(tablet) {
       width: 500px;
