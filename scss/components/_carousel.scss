@@ -82,6 +82,10 @@
         @include breakpoint-up(desktop) {
           font-size: $_50px;
         }
+
+        @include breakpoint-up(large) {
+          font-size: $_38px;
+        }
       }
 
       &.services {

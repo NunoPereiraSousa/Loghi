@@ -21,7 +21,7 @@
       <div class="header__hamburger hide-for-desktop"></div>
       <div class="header__desktop_menu hide-for-mobile">
         <a href="/showcase.html">Projects</a>
-        <a href="/about.html">About</a>
+        <a href="/about.html">About Us</a>
       </div>
     </nav>
     <nav class="header_open flex flex-ai-c flex-jc-sb hide-for-desktop">
@@ -43,7 +43,7 @@
               <a href="/showcase.html">Projects</a>
             </li>
             <li>
-              <a href="/about.html">About</a>
+              <a href="/about.html">About Us</a>
             </li>
           </ul>
 
@@ -110,9 +110,15 @@
     <main class="main">
       <section class="presentation">
         <h1 class="presentation__title">
-          <div>We</div>
-          <div>Create</div>
-          <div>Difference</div>
+          <div class="line">
+            <div>We</div>
+          </div>
+          <div class="line">
+            <div>Create</div>
+          </div>
+          <div class="line">
+            <div>Difference</div>
+          </div>
         </h1>
 
         <div class="presentation__banner">
@@ -545,7 +551,11 @@
         </div>
 
         <div class="presentation__email">
-          <a href="mailto:loghidev@gmail.com">loghidev@gmail.com</a>
+          <a href="mailto:loghidev@gmail.com">
+            <div class="line">
+              <div>loghidev@gmail.com</div>
+            </div>
+          </a>
         </div>
       </section>
       <!-- <section class="carousels">
@@ -574,38 +584,38 @@
         </div>
       </section> -->
       <section class="about">
-        <h1 class="subtitle">
+        <h1 class="subtitle home_subtitle1">
           About <br />
           <span>The Boys</span>
         </h1>
 
-        <p class="about__paragraph">
+        <h3 class="about__paragraph">
           We are two students, with a focus on delivering extraordinary creative
           solutions that work and do transformations.
-        </p>
+        </h3>
 
-        <p class="about__paragraph">
+        <h3 class="about__paragraph">
           We are based in Portugal but we have experience in working
           international as freelancers.
-        </p>
+        </h3>
       </section>
 
       <section class="services grid">
-        <h1 class="subtitle">
+        <h1 class="subtitle home_subtitle2">
           What about <br />
           <span class="red">what we do</span>?
         </h1>
 
         <div class="services__grid grid">
           <div class="services__grid__card">
-            <h2>Website development</h2>
-            <p>
+            <h2 class="services__grid__card__title">Website development</h2>
+            <p class="services__grid__card__subtitle">
               We create websites that work and do business transformations
               Better looking and functional as the ones you see out there.
-            </p>
+            </h4>
           </div>
           <div class="services__grid__card">
-            <h2>Teaching & Tutoring</h2>
+            <h2 class="services__grid__card__title">Teaching & Tutoring</h2>
             <p>
               Over 140 hours tutored in the last four months with students from
               all over the world and 100% satisfaction guaranteed.
@@ -620,7 +630,8 @@
           </div>
           <div class="services__grid__card__red">
             <h2>
-              Start working <br class="hide-for-desktop" />
+              Start working
+              <br class="hide-for-desktop" />
               with us
             </h2>
             <p>We deliver honorable products with passion and strive!</p>
@@ -657,8 +668,8 @@
       </section>
 
       <section class="projects_showcase">
-        <h1 class="subtitle">
-          What we <br />
+        <h1 class="subtitle home_subtitle3">
+          What we <br>
           <span>have build <sup>1-7</sup></span>
         </h1>
 
@@ -781,6 +792,9 @@
       </footer>
     </main>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
     <script src="./js/header.js"></script>
+    <script src="./js/home.js"></script>
   </body>
 </html>

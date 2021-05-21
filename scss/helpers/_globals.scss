@@ -66,9 +66,14 @@ button:focus {
   display: grid;
 }
 
-// .overflow {
-//   overflow: hidden;
-// }
+.line {
+  overflow: hidden;
+
+  div {
+    transform: translateY(100%);
+    transition: all 0.75s ease-in-out;
+  }
+}
 
 // .about_show,
 // .about_show_desktop,

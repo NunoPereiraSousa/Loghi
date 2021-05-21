@@ -52,10 +52,12 @@
   }
 
   &__banner {
+    opacity: 0;
     margin: 10vh 0;
     background-color: $white;
     padding: 0.6rem 0;
     transform: rotate(4deg);
+    transition: all 0.75s ease-in-out;
 
     @include breakpoint-up(tablet) {
       padding: 1rem 0;
@@ -74,6 +76,8 @@
 
   &__svg {
     padding: 0 2rem;
+    opacity: 0;
+    transition: all 0.75s ease-in-out;
 
     svg#circle {
       animation: spin 15s infinite linear;
@@ -167,6 +171,7 @@
   &__paragraph {
     color: $grey;
     font-size: $_18px;
+    font-weight: 400;
 
     margin: 0;
 
@@ -198,6 +203,7 @@
 
     @include breakpoint-up(large) {
       width: 50vw;
+      line-height: 1.3;
     }
   }
 }

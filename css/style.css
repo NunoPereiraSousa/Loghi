@@ -319,6 +319,17 @@ button:focus {
   display: grid;
 }
 
+.line {
+  overflow: hidden;
+}
+
+.line div {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+}
+
 @media (max-width: 63.9375em) {
   .hide-for-mobile {
     display: none;
@@ -967,11 +978,14 @@ main {
 }
 
 .presentation__banner {
+  opacity: 0;
   margin: 10vh 0;
   background-color: #ffffff;
   padding: 0.6rem 0;
   -webkit-transform: rotate(4deg);
           transform: rotate(4deg);
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
 }
 
 @media (min-width: 48em) {
@@ -996,6 +1010,9 @@ main {
 
 .presentation__svg {
   padding: 0 2rem;
+  opacity: 0;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
 }
 
 .presentation__svg svg#circle {
@@ -1118,6 +1135,7 @@ main {
 .about__paragraph {
   color: #c9c9c9;
   font-size: 1.125rem;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -1157,6 +1175,7 @@ main {
 @media (min-width: 120em) {
   .about__paragraph {
     width: 50vw;
+    line-height: 1.3;
   }
 }
 
@@ -1316,6 +1335,12 @@ main {
 @media (min-width: 75em) {
   .carousel .slide h3.landing2 {
     font-size: 3.125rem;
+  }
+}
+
+@media (min-width: 120em) {
+  .carousel .slide h3.landing2 {
+    font-size: 2.375rem;
   }
 }
 
